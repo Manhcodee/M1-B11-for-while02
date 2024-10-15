@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+<script>
+  let a = parseInt(prompt('nhap so nguyen duong'))
+  let gt = 1;
+  for (let i = 2; i <= a ; i++) {
+    gt *= `${i}`;
+  }
+  alert(`KQ = ${gt}`);
+</script>
+</body>
+</html>

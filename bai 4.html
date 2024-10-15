@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình chữ nhật</title>
+</head>
+<body>
+<div id="output"></div>
+<script>
+    function drawStarBorder(width, height) {
+        let table = '<table>';
+        for (let y = 0; y < height; y++) {
+            table += '<tr>';
+            for (let x = 0; x < width; x++) {
+                if (y === 0 || y === height - 1 || x === 0 || x === width - 1) {
+                    table += '<td>*</td>';
+                } else {
+                    table += '<td>&nbsp;</td>';
+                }
+            }
+            table += '</tr>';
+        }
+        table += '</table>';
+        document.getElementById('output').innerHTML = table;
+    }
+
+    // Vẽ khung hình với kích thước 22x7
+    drawStarBorder(22, 7);
+</script>
+</body>
+</html>

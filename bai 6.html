@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vẽ hình trái tim bằng vòng lặp</title>
+</head>
+<body>
+<canvas id="heartCanvas" width="400" height="400"></canvas>
+<script>
+  const canvas = document.getElementById('heartCanvas');
+  const ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = 'red'; // Màu đỏ cho hình trái tim
+
+  // Vẽ hình trái tim bằng vòng lặp
+  for (let t = 0; t < 2 * Math.PI; t += 0.01) {
+    let x = 16 * Math.sin(t) ** 3;
+    let y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+    ctx.fillRect(200 + x * 10, 200 - y * 10, 2, 2); // Vẽ điểm
+  }
+</script>
+</body>
+</html>

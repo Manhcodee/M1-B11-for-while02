@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+  let laiSuat = 5 /100;
+  let soThang = 5;
+  let soTien = 100000000;
+  let tienLai = 0;
+  for (let i = 0; i < soThang; i++) {
+        tienLai += soTien * laiSuat / 12;
+  }
+  document.write(tienLai.toLocaleString('vi-vn'));
+</script>
+</body>
+</html>

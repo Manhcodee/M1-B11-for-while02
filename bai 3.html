@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In tam giác vuông</title>
+</head>
+<body>
+<script>
+    let line = "*";
+    let tg = "";
+    for (let i = 0; i < 5; i++) {
+        tg += `${line} </br>`;
+        line+= '*';
+    }
+    document.write(tg)
+
+    let line1 = "*";
+    let tg1 = "";
+    for (let i = 0; i < 5; i++) {
+        tg1 += `${line1} </br>`;
+        line1+= '*';
+    }
+    document.write(`<div style="transform: rotate(180deg); display: inline-block; width: 100px">${tg1}</div>`)
+
+    let line2 = "*";
+    let tg2 = "";
+    for (let i = 0; i < 5; i++) {
+        tg2 += `<span style="float: right;">${line2}</span> <br>`;
+        line2+= '*';
+    }
+    document.write(`<div style="transform: rotate(180deg);width: 100px;">${tg2}</div>`)
+
+    let line3 = "*";
+    let tg3 = "";
+    for (let i = 0; i < 5; i++) {
+        tg3 += `<span style="float: right">${line3}</span> </br>`;
+        line3+= '*';
+    }
+    document.write(`<div style="width: 100px;"> ${tg3}</div>`)
+</script>
+</body>
+</html>
